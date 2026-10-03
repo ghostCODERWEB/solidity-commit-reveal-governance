@@ -1,0 +1,11 @@
+{
+  "name": "solidity-commit-reveal-governance",
+  "title": "Commit-reveal token voting",
+  "contract": "CommitRevealVoting",
+  "description": "Token-escrowed commit/reveal proposals with quorum, immutable phase deadlines and refundable voting deposits.",
+  "args": [
+    "$TOKEN",
+    "$ADMIN"
+  ],
+  "assumptions": "Voting weight is deposited tokens, not historical ERC20Votes snapshots. All deposits become withdrawable after reveal deadline, including unrevealed votes. Passed proposals are signals only; the contract does not execute treasury actions. Admin controls proposal creation."
+}
